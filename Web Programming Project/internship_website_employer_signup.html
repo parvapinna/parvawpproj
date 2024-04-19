@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+        <style>
+            .body {
+                font-family: 'Inter';
+            }
+
+            .topnav {
+                background-color: rgba(255, 95, 0, 0.7);
+                overflow: hidden;
+            }
+            
+            .logo-image {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-top: -6px;
+            }
+
+            .topnav a {
+                float: left;
+                color: #ffffff;
+                text-align: center;
+                padding: 24px 16px 10px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .topnav-right {
+                float: right;
+                padding-right: 10px;
+            }
+
+            .topnav-right a {
+                padding: 24px 4px 10px;
+            }
+
+            .form-box {
+                border-style: solid;
+                border-width: 3px;
+                border-color: #D9D9D9;
+                border-radius: 3px;
+                margin: 75px 100px;
+            }
+
+            .form-box h1 {
+                font-size: 24;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .form-box form {
+                font-size: 12;
+                font-weight: bold;
+                padding-left: 125px;
+                padding-right: 125px;
+            }
+
+            .form-box input {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #D9D9D9;
+                border-radius: 3px;
+                width: 100%;
+            }
+
+            .form-box select {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #D9D9D9;
+                border-radius: 3px;
+                width: 100%;
+            }
+
+            .form-box button {
+                background-color: #FF5F00;
+                border: none;
+                color: white;
+                margin-top: 32px;
+                margin-left: calc(50% - 60px);
+                height: 24px;
+                width: 120px;
+                border-radius: 3px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .form-box p {
+                padding-top: 10px;
+                padding-left: 70px;
+                font-size: 14;
+                font-weight: bold;
+            }
+
+            .form-box a {
+                color: #FF5F00;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a class="topnav" href="/">
+                <div class="logo-image">
+                      <img src="image" class="img-fluid">
+                </div>
+            </a>
+            <a class="active" href="#home">Home</a>
+            <a href="#companies">Companies</a>
+            <a href="#findjobs">Find Jobs</a>
+            <div class="topnav-right">
+                <a href="internship_website_signin.html">Sign In</a>
+                <a href=""> | </a>
+                <a href="internship_website_employer_signin.html">Employers</a>
+              </div>
+        </div>
+
+        <div class="form-box">
+            <h1>Sign up as employer</h1>
+            <form action="employer_signup_action_page.php" method="post" id="sign_in">
+                <label for="companyname">Company name</label><br>
+                <input type="text" id="companyname" name="companyname"><br>
+                <br>
+                <label for="email">Email address</label><br>
+                <input type="text" id="email" name="email"><br>
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br>
+                <br>
+                <label for="passconfirm">Confirm password</label><br>
+                <input type="password" id="passconfirm" name="passconfirm"><br>
+                <br>
+                <label for="companytype">Company type</label><br>
+                <select id="companytype" name="companytype">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option4">Option 4</option>
+                </select><br>
+                <br>
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address"><br>
+                <br>
+                <label for="employeeno">Number of employees</label><br>
+                <input type="number" id="employeeno" name="employeeno"><br>
+                <br>
+            </form>
+            <button type="submit" form="sign_in" value="SignIn">Sign In</button><br>
+            <p>Already registered? <a href="internship_website_employer_signin.html">Sign In</a></p>
+        </div>
+    </body>
+</html>
