@@ -6,8 +6,8 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <link rel="stylesheet" type="text/css" href="./css/internship_signup.css" />
-        <title>Employee Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="./css/internship_userpage.css" />
+        <title>Employee Sign In</title>
     </head>
 
     <body>
@@ -29,40 +29,16 @@
         </nav>
         <!-- navigation end -->
 
-        <div class="form-box">
-            <h1>Sign up as jobseeker</h1>
-            <form action="signup_action_page.php" method="post" id="sign_in">
-                <div class="form-name">
-                    <div class="form-firstname">
-                        <label for="firstname">First name</label><br>
-                        <input type="text" id="firstname" name="firstname">
-                    </div>
-                    <div class="form-middlename">
-                        <label for="middlename">Middle name</label><br>
-                        <input type="text" id="firstname" name="firstname">
-                    </div>
-                    <div class="form-surname">
-                        <label for="surname">Surname</label><br>
-                        <input type="text" id="surname" name="surname">
-                    </div>
-                </div>
-                <div class="form-other">
-                    <label for="email">Email address</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <br>
-                    <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password"><br>
-                    <br>
-                    <label for="passconfirm">Confirm password</label><br>
-                    <input type="password" id="passconfirm" name="passconfirm"><br>
-                    <br>
-                    <label for="dob">Date of birth</label><br>
-                    <input type="date" id="dob" name="dob"><br>
-                </div>
-                <br>
-            </form>
-            <button type="submit" form="sign_in" value="SignIn">Sign In</button><br>
-            <p>Already registered? <a href="internship_website_signin.html">Sign In</a></p>
+
+        <div class="user-box">
+            <img src="https://placehold.co/120x120" alt="Avatar">
+            <h1>John Doe</h1>
+            <button>Edit Contact</button><br>
+            <button>Upload CV</button><br>
+            <br>
+            <p><i class="fa-solid fa-envelope"></i> email@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +62 815-000-000</p>
+            <p><i class="fa-solid fa-globe"></i> Place, ID</p>
         </div>
 
         <!-- footer start -->

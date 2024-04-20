@@ -1,123 +1,33 @@
-<html>
+<html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
-        <style>
-            .body {
-                font-family: 'Inter';
-            }
-
-            .topnav {
-                background-color: rgba(255, 95, 0, 0.7);
-                overflow: hidden;
-            }
-            
-            .logo-image {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                overflow: hidden;
-                margin-top: -6px;
-            }
-
-            .topnav a {
-                float: left;
-                color: #ffffff;
-                text-align: center;
-                padding: 24px 16px 10px;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 14px;
-            }
-
-            .topnav-right {
-                float: right;
-                padding-right: 10px;
-            }
-
-            .topnav-right a {
-                padding: 24px 4px 10px;
-            }
-
-            .form-box {
-                border-style: solid;
-                border-width: 3px;
-                border-color: #D9D9D9;
-                border-radius: 3px;
-                margin: 75px 100px;
-            }
-
-            .form-box h1 {
-                font-size: 24;
-                font-weight: bold;
-                text-align: center;
-            }
-
-            .form-box form {
-                font-size: 12;
-                font-weight: bold;
-                padding-left: 70px;
-                padding-right: 70px;
-            }
-
-            .form-box input {
-                border-style: solid;
-                border-width: 2px;
-                border-color: #D9D9D9;
-                border-radius: 3px;
-                width: 100%;
-            }
-
-            .form-box form a {
-                color: black;
-                float: right;
-                text-decoration: none;
-            }
-
-            .form-box button {
-                background-color: #FF5F00;
-                border: none;
-                color: white;
-                margin-top: 32px;
-                margin-left: calc(50% - 60px);
-                height: 24px;
-                width: 120px;
-                border-radius: 3px;
-                text-align: center;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 12px;
-            }
-
-            .form-box p {
-                padding-top: 10px;
-                padding-left: 70px;
-                font-size: 14;
-                font-weight: bold;
-            }
-
-            .form-box a {
-                color: #FF5F00;
-                text-decoration: none;
-            }
-        </style>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./css/internship_signin.css" />
+        <title>Employee Sign In</title>
     </head>
 
     <body>
-        <div class="topnav">
-            <a class="topnav" href="/">
-                <div class="logo-image">
-                      <img src="image" class="img-fluid">
-                </div>
-            </a>
-            <a class="active" href="#home">Home</a>
-            <a href="#companies">Companies</a>
-            <a href="#findjobs">Find Jobs</a>
-            <div class="topnav-right">
+        <!-- navigation start -->
+        <nav class="nav">
+            <div class="navigation">
+            <img src="./images/hero_logo.png" alt="logo" class="logo" />
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Companies</a>
+                <a href="#">Find Jobs</a>
+            </div>
+            </div>
+            <div class="navigation_signin">
                 <a href="internship_website_signin.html">Sign In</a>
                 <a href=""> | </a>
                 <a href="internship_website_employer_signin.html">Employers</a>
-              </div>
-        </div>
+            </div>
+        </nav>
+        <!-- navigation end -->
 
         <div class="form-box">
             <h1>Sign in</h1>
@@ -134,5 +44,55 @@
             <button type="submit" form="sign_in" value="SignIn">Sign In</button><br>
             <p>Don't have an account? <a href="internship_website_signup.html">Sign Up</a></p>
         </div>
+
+        <!-- footer start -->
+        <footer>
+            <div class="top-container">
+            <p class="titles">Internship <br />Website</p>
+            <div class="box-navigation">
+                <div class="navigation">
+                <p>Internship website</p>
+                <p>Contact</p>
+                <p>Help</p>
+                </div>
+                <div class="navigation">
+                <p>For Jobseekers</p>
+                <p>Salaries</p>
+                <p>Recent Jobs</p>
+                </div>
+                <div class="navigation">
+                <p>For Employers</p>
+                <p>Post A Job</p>
+                <p>Market Insights</p>
+                </div>
+            </div>
+            </div>
+            <div class="bottom-container">
+            <div class="social-media-icons">
+                <a href="">
+                <img src="./images/icons/image 8.png" alt="image" />
+                </a>
+                <a href="">
+                <img src="./images/icons/instagram.png" alt="image" />
+                </a>
+                <a href="">
+                <img src="./images/icons/facebook.png" alt="image" />
+                </a>
+                <a href="">
+                <img src="./images/icons/x.png" alt="image" />
+                </a>
+                <a href="">
+                <img
+                    src="./images/icons/youtube.png"
+                    alt="image"
+                    width="34"
+                    height="34"
+                />
+                </a>
+            </div>
+            <p>Copyright © 2024 Internship website. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
     </body>
 </html>
