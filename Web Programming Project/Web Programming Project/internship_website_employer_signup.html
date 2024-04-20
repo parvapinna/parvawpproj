@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./css/internship_employer_signup.css" />
+        <title>Employer Sign Up</title>
+    </head>
+
+    <body>
+        <!-- navigation start -->
+        <nav class="nav">
+            <div class="navigation">
+            <img src="./images/hero_logo.png" alt="logo" class="logo" />
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Companies</a>
+                <a href="#">Find Jobs</a>
+            </div>
+            </div>
+            <div class="navigation_signin">
+                <a href="internship_website_signin.html">Sign In</a>
+                <a href=""> | </a>
+                <a href="internship_website_employer_signin.html">Employers</a>
+            </div>
+        </nav>
+        <!-- navigation end -->
+
+        <div class="form-box">
+            <h1>Sign up as employer</h1>
+            <form action="employer_signup_action_page.php" method="post" id="sign_in">
+                <label for="companyname">Company name</label><br>
+                <input type="text" id="companyname" name="companyname"><br>
+                <br>
+                <label for="email">Email address</label><br>
+                <input type="text" id="email" name="email"><br>
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br>
+                <br>
+                <label for="passconfirm">Confirm password</label><br>
+                <input type="password" id="passconfirm" name="passconfirm"><br>
+                <br>
+                <label for="companytype">Company type</label><br>
+                <select id="companytype" name="companytype">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option4">Option 4</option>
+                </select><br>
+                <br>
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address"><br>
+                <br>
+                <label for="employeeno">Number of employees</label><br>
+                <input type="number" id="employeeno" name="employeeno"><br>
+                <br>
+            </form>
+            <button type="submit" form="sign_in" value="SignIn">Sign In</button><br>
+            <p>Already registered? <a href="internship_website_employer_signin.html">Sign In</a></p>
+        </div>
+
+        <!-- footer start -->
+        <footer>
+            <div class="top-container">
+            <p class="titles">Internship <br />Website</p>
+            <div class="box-navigation">
+                <div class="navigation">
+                <p>Internship website</p>
+                <p>Contact</p>
+                <p>Help</p>
+                </div>
+                <div class="navigation">
+                <p>For Jobseekers</p>
+                <p>Salaries</p>
+                <p>Recent Jobs</p>
+                </div>
+                <div class="navigation">
+                <p>For Employers</p>
+                <p>Post A Job</p>
+                <p>Market Insights</p>
+                </div>
+            </div>
+            </div>
+            <div class="bottom-container">
+            <div class="social-media-icons">
+                <a href="">
+                <img src="./images/icons/image 8.png" alt="image" />
+                </a>
+                <a href="">
+                <img src="./images/icons/instagram.png" alt="image" />
+                </a>
+                <a href="">
+                <img src="./images/icons/facebook.png" alt="image" />
+                </a>
+                <a href="">
+                <img src="./images/icons/x.png" alt="image" />
+                </a>
+                <a href="">
+                <img
+                    src="./images/icons/youtube.png"
+                    alt="image"
+                    width="34"
+                    height="34"
+                />
+                </a>
+            </div>
+            <p>Copyright © 2024 Internship website. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </body>
+</html>
